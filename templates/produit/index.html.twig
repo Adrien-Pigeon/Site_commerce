@@ -1,20 +1,28 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ProduitController!{% endblock %}
+{% block titre %}Hello ProduitController!{% endblock %}
 
-{% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+{% block contenu %}
+    <h1 class="mt-4">Liste des Produits</h1>
+    <div class="mt-4 col-4 offset-3">
+        <h3>Famas = 3999$
+            <button>Acheter</button>
+        </h3>
+        <img src="{{ asset('/img/famas.png') }}" alt="Symfony" class="arme"/>
+        <p>Le FAMAS (ou FA-MAS), désigné comme « fusil d'assaut de 5,56 mm modèle F1 MAS » au sein de l'armée française,
+            est un fusil d'assaut français de calibre 5,56 × 45 mm Otan de type bullpup, initialement fabriqué par la
+            Manufacture d'armes de Saint-Étienne.</p>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <div class="mt-4 col-4 offset-3">
+        <h3>12,7 mm = 4500$
+            <button>Acheter</button>
+        </h3>
+        <img src="{{ asset('/img/127.png') }}" alt="Symfony" class="arme"/>
+        <p>
+            Mitrailleuse Browning de 12,7 mm (Etats Unis)
+            <br><br>Poids du trépied : 19,960 kg (pour le type M3). Vitesse initiale du projectile : 884 m/s. Cadence de tir :
+            450-575 coups/mn. Alimentation : bande circulaire à maillons métalliques de 110 cartouches.</p>
+    </div>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/PHP/www/Projets/Site_commerce/src/Controller/ProduitController.php'|file_link(0) }}">src/Controller/ProduitController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/PHP/www/Projets/Site_commerce/templates/produit/index.html.twig'|file_link(0) }}">templates/produit/index.html.twig</a></code></li>
-    </ul>
-</div>
 {% endblock %}

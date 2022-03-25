@@ -1,0 +1,49 @@
+
+body {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8kUGH1mgN1qqeEav2Do7T3P_J0CXCE7XTjjHy0383X26Q1htkgLdQ6OoHxjLfblgy0j4&usqp=CAU');
+}
+
+p {
+    color: #f1f2f3;
+}
+
+h1 {
+    color: #f1f2f3;
+}
+
+h3 {
+    color: #f1f2f3;
+}
+
+.logo {
+    border: solid white 3px;
+    width: 10%;
+    height: auto;
+}
+
+.title {
+    display: flex;
+    margin-top: 20px;
+}
+
+.title img {
+    width: 10%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.copy {
+    color: #f1f2f3;
+}
+
+.copy img {
+    width: 5%;
+    height: auto;
+}
+
+.arme {
+
+    border: solid white 4px;
+    width: 160%;
+    height: auto;
+}

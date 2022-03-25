@@ -13,7 +13,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>
-        Bucket --{% block titre %} {% endblock %}
+        Airsoft shop -- {% block titre %} {% endblock %}
         {% block titre2 %} {% endblock %}
         {% block titre3 %} {% endblock %}
         {% block titre4 %} {% endblock %}
@@ -23,9 +23,9 @@
 
 <body>
 <div class="container">
-    <div class="title">
-        <img src="{{ asset('/img/logo.png') }}" alt="Symfony"/>
-        <h1>Bucket-Voyance</h1>
+    <div class="title ">
+        <img src="{{ asset('/img/logoGrand.png') }}" alt="Symfony" class="logo"/>
+        <h1 style="color: #ae2b30">Airsoft Shop</h1>
     </div>
     <nav>
 
@@ -34,7 +34,7 @@
 
             <a href="{{ path('app_login') }}">Connexion</a>
 
-            <a href="{{ path('app_register') }}">Inscription</a>
+           <a href="{{ path('app_register') }}">Inscription</a>
 
 
 
@@ -45,7 +45,7 @@
     </nav>
     <header>
 
-        <nav class="navbar navbar-light" style="background-color: rgba(216,224,187,1)">
+        <nav class="navbar navbar-light" style="background-color: #ae2b30">
 
             <a href="{{ path("app_main") }}">Accueil</a>
             <a href="{{ path("app_produit") }}">Produit</a>
@@ -64,30 +64,15 @@
         <main>
 
             {% block contenu %}
-            {% endblock %}
-            {% block contenu2 %}
-            {% endblock %}
-            {% block contenu3 %}
-            {% endblock %}
-            {% block contenu4 %}
-            {% endblock %}
-            {% block contenu5 %}
-            {% endblock %}
-            {% block contenu6 %}
-            {% endblock %}
-            {% block contenu7 %}
-            {% endblock %}
-            {% block contenu8 %}
-            {% endblock %}
-            {% block contenu9 %}
+
             {% endblock %}
 
         </main>
     </div>
     <div class="copy">
         <footer class="mt-3">
-            <img src="{{ asset('/img/favicon.png') }}" alt="Symfony"/>
-            Bucket-Voyance &copy; {{ "now"|date("Y") }}
+            <img  src="{{ asset('/img/logoPetit.png') }}" alt="Symfony"/>
+            Airsoft -- Shop &copy; {{ "now"|date("Y") }}
         </footer>
     </div>
 </div>
