@@ -13,7 +13,7 @@ class CommandeController extends AbstractController
      */
     public function index(): Response
     {
-        return $this->render('commande/index.html.twig', [
+        return $this->render('commande/produit.html.twig', [
             'controller_name' => 'CommandeController',
         ]);
     }
